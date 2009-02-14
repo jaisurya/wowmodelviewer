@@ -1,8 +1,0 @@
-#summary The WoW Model Viewer updated for 3.0 and beyond.
-#labels Phase-Requirements,Featured
-
-= Introduction =
-The original WoW Model Viewer was written by Darkjk. The program was used by machinima creators and graphic artists and could import the game's models into an interface and allowed exporting of the movements, or exporting the bone structure of the model for use in programs such as 3D Studio max. The program updating was stopped before 3.0
-
-= Details =
-The program currently supports Wrath of the Lich king, but has very limited use for the new models.
