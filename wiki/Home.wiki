@@ -7,7 +7,7 @@ The program allows you to view characters and to equip them with items, also all
 
 -http://www.wowmodelviewer.org/
 
-= Version Information =
-
-Current Version: 0.6.00 ALPHA<p>
-Previous Version: 0.5.09 DELTA
+= Pages =
+1. Home
+2. <a href="http://www.code.google.com/p/wowmodelviewer/wiki/ToDo">ToDo</a><p>
+3. <a href="http://www.code.google.com/p/wowmodelviewer/wiki/Changelog">Changelog</a>
