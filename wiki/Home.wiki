@@ -7,7 +7,7 @@ The program allows you to view characters and to equip them with items, also all
 
 -http://www.wowmodelviewer.org/
 
-= Details =
+= Version Information =
 
-Current Version: 0.6.00 ALPHA
+Current Version: 0.6.00 ALPHA<p>
 Previous Version: 0.5.09 DELTA
