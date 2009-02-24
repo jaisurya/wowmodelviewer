@@ -1,4 +1,4 @@
-#summary To Do:
+#summary A list of additions to the WoW Model Viewer.
 #labels Phase-Requirements,Phase-Support
 
 = Introduction =
