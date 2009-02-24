@@ -8,6 +8,6 @@ The program allows you to view characters and to equip them with items, also all
 -http://www.wowmodelviewer.org/
 
 = Pages =
-1. Home
+1. Home<p>
 2. <a href="http://www.code.google.com/p/wowmodelviewer/wiki/ToDo">ToDo</a><p>
 3. <a href="http://www.code.google.com/p/wowmodelviewer/wiki/Changelog">Changelog</a>
