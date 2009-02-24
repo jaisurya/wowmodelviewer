@@ -1,0 +1,7 @@
+#summary A list of changes from version to version.
+#labels Phase-QA,Phase-Support
+= Current Version =
+Currently, no changes have been made from 0.5.09 DELTA.
+
+= Previous Versions =
+We can't list these since we don't know because we didn't create before 6.0.00
