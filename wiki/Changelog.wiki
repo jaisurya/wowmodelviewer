@@ -1,5 +1,8 @@
 #summary A list of changes from version to version.
 #labels Phase-QA,Phase-Support
+< <a href="http://code.google.com/p/wowmodelviewer/wiki/Home">Home</a> ><
+<a href="http://code.google.com/p/wowmodelviewer/wiki/ToDo">To Do</a> ><
+<a href="http://code.google.com/p/wowmodelviewer/wiki/Changelog">Changelog</a> >
 = Current Version =
 Currently, no changes have been made from 0.5.09 DELTA.
 
