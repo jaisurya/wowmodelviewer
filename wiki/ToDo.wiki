@@ -1,6 +1,8 @@
 #summary A list of additions to the WoW Model Viewer.
 #labels Phase-Requirements,Phase-Support
-<a href="http://code.google.com/p/wowmodelviewer/wiki/Home">Home</a> || <a href="http://code.google.com/p/wowmodelviewer/wiki/ToDo">To Do</a> || <a href="http://code.google.com/p/wowmodelviewer/wiki/Changelog">Changelog</a>
+< <a href="http://code.google.com/p/wowmodelviewer/wiki/Home">Home</a> ><
+<a href="http://code.google.com/p/wowmodelviewer/wiki/ToDo">To Do</a> ><
+<a href="http://code.google.com/p/wowmodelviewer/wiki/Changelog">Changelog</a> >
 
 = Introduction =
 
