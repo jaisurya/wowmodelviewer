@@ -17,6 +17,6 @@ Obviously the WoW Model Viewer will never be perfect. This page is a list of ite
 6. Alpha channels for exports.<p>
 
 = Secondary Additions: =
-1. Integrated Map Viewer.
-2. Macintosh support including OpenGL.
-3. Custom camera tracking.
+1. Integrated Map Viewer.<p>
+2. Macintosh support including OpenGL.<p>
+3. Custom camera tracking.<p>
