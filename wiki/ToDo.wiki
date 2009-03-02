@@ -8,8 +8,7 @@
 
 Obviously the WoW Model Viewer will never be perfect. This page is a list of items we have to add, fix, or remove from the program (other than building upon the core itself) in order to make it better. The list is in order of most desired/useful to least.
 
-= Main Additions =
-The top five additions to the WoW Model Viewer are:<p>
+= Primary Additions: =
 1. Support for a broader range of video and image formats for importing.<p>
 2. Support for 3D Studio Max and Lightwave 3D exports.<p>
 3. Animation sequences.<p>
@@ -17,6 +16,7 @@ The top five additions to the WoW Model Viewer are:<p>
 5. Multiple on-screen characters.<p>
 6. Alpha channels for exports.<p>
 
-= Other =
-We may also be able to add:<p>
-1. Integrated Map Viewer (Possibility!).
+= Secondary Additions: =
+1. Integrated Map Viewer.
+2. Macintosh support including OpenGL.
+3. Custom camera tracking.
