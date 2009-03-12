@@ -20,3 +20,4 @@ Obviously the WoW Model Viewer will never be perfect. This page is a list of ite
 1. Integrated Map Viewer.<p>
 2. Macintosh support including OpenGL.<p>
 3. Custom camera tracking.<p>
+4. MPQ importing. <p>
