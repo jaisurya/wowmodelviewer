@@ -8,3 +8,35 @@ The WoW Model Viewer is a stand-alone program that reads the data filesthat are 
 The program allows you to view characters and to equip them with items, also allowing you to see them performing animations, can view any creature that exists within the game using any of their various textures, as well as seeing some of the underlaying detail such as their skeletal system. Support was also added for being able to customise the lighting conditions in an attempt to allow the users, imparticularly machinima makers to improve the lighting conditions to help blend the models with background scenes. 
 
 -http://www.wowmodelviewer.org/
+
+=How to get the source to compile=
+
+==Download and install wxWidgets 2.8.10==
+
+1. get wxMSW - installer for Windows(wxMSW-2.8.10-Setup.exe) from http://www.wxwidgets.org/downloads/
+
+2. install wxMSW-2.8.10-Setup.exe to C:\wxWidgets-2.8.10\
+
+3. use vc2008 to open wxWidgets-2.8.10\build\msw\wx.dsw and build it with debug/release mode
+
+==Download and install CxImage==
+
+1. get cximage600_full.7z from http://www.xdp.it/cximage.htm
+
+2. extract and use vc2008 to open CxImgLib.dsw, compile release and debug version
+
+3. copy bin/cximagecrt.dll to your wowmodelviewer path
+
+==Install Glew==
+
+1. use vc2008 to open wowmodelviewer\src\glew\build\vc6\glew.sln
+
+2. compile release and debug version
+
+==WoWModelViewer==
+
+1. get wowmodelviewer from googlecode http://code.google.com/p/wowmodelviewer/source/checkout
+
+    svn checkout http://wowmodelviewer.googlecode.com/svn/trunk/ wowmodelviewer-read-only
+
+2. use vc2008 to open wowmodelviewer-read-only\src\wowmodelview.sln
