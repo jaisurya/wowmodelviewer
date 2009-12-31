@@ -5,7 +5,15 @@
 <a href="http://code.google.com/p/wowmodelviewer/wiki/Changelog">Changelog</a> >
 
 = Current Version =
-World of Warcraft Model Viewer v0.5.08 (Chuanhsing Update r659)
+World of Warcraft Model Viewer v0.5.08 (Chuanhsing Update)
+
+r661
+
+  Thanks Kjasi for following patches
+
+  - WMO exporting will now save the textures as their original filenames. This will reduce the overall number of files made when exporting many WMOs with the same textures. Surface names have been changed to reflect their texture's path & filename. This will make sorting & managing exported textures easier.
+
+  - Fixed the inverted z-axis with WMO->LWO files.
 
 r659
  - Fixed particle bug that may contains invalid row and col number and cause WMV crash
