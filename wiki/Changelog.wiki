@@ -7,6 +7,32 @@
 = Current Version =
 World of Warcraft Model Viewer v0.5.08 (Chuanhsing Update)
 
+r663
+
+ -Lightwave Scenes should read falloff data from WMO's lights and set up the light accordingly. (Don't know of a WMO with Light falloff settings, so I haven't tested it...);
+
+ -Added default lighting settings to the Lightwave Scenes that look close to the game's settings.
+
+ -(Dev Work) Defined some WMO Light properties that were previously unknown or not recorded.
+
+ -(Dev Work) Moved Lightwave Exporting to a seperate file. Will move the others later.
+
+ -(Dev Work) Did a lot of format research for LWO2 files. Large commented section in the WMO->LWO function.
+
+r662
+
+ -LWO WMO Export now supports double-sided polys.
+
+ -LWO WMO files are now smoothed 180 degrees by default.
+
+ -LWO WMOs will now export each model group as a seperate Part.
+
+ -LWO WMO files that have lights will now export a Scene file with those Lights, using the proper colors and in the proper positions!
+
+ -Changed default LWO WMO Glossiness amount to 20% (up from 0%).
+
+ -Adjusted surface attributes for OBJ WMO files. (Now they won't be so dang bright...)
+
 r661
 
   Thanks Kjasi for following patches
