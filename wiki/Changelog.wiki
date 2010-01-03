@@ -7,15 +7,22 @@
 = Current Version =
 World of Warcraft Model Viewer v0.5.08 (Chuanhsing Update)
 
-r666
+r667
+  -Exported Lightwave Scene files now contain Doodad Placement nulls, parented to DoodadSet nulls.
 
+  -Lights attached to Doodads will now export to the Lightwave Scene file
+
+  -Fixed a bug when exporting old M2/MDX models via LWO
+
+  -(Dev Work) Defined Model Light Attenuation
+
+r666
  - Fixed WMO Export functions
 
 r663
+  -Lightwave Scenes should read falloff data from WMO's lights and set up the light accordingly. (Don't know of a WMO with Light falloff settings, so I haven't tested it...);
 
- -Lightwave Scenes should read falloff data from WMO's lights and set up the light accordingly. (Don't know of a WMO with Light falloff settings, so I haven't tested it...);
-
- -Added default lighting settings to the Lightwave Scenes that look close to the game's settings.
+  -Added default lighting settings to the Lightwave Scenes that look close to the game's settings.
 
  -(Dev Work) Defined some WMO Light properties that were previously unknown or not recorded.
 
@@ -24,7 +31,6 @@ r663
  -(Dev Work) Did a lot of format research for LWO2 files. Large commented section in the WMO->LWO function.
 
 r662
-
  -LWO WMO Export now supports double-sided polys.
 
  -LWO WMO files are now smoothed 180 degrees by default.
@@ -38,10 +44,9 @@ r662
  -Adjusted surface attributes for OBJ WMO files. (Now they won't be so dang bright...)
 
 r661
+ Thanks Kjasi for following patches:
 
-  Thanks Kjasi for following patches
-
-  - WMO exporting will now save the textures as their original filenames. This will reduce the overall number of files made when exporting many WMOs with the same textures. Surface names have been changed to reflect their texture's path & filename. This will make sorting & managing exported textures easier.
+ - WMO exporting will now save the textures as their original filenames. This will reduce the overall number of files made when exporting many WMOs with the same textures. Surface names have been changed to reflect their texture's path & filename. This will make sorting & managing exported textures easier.
 
   - Fixed the inverted z-axis with WMO->LWO files.
 
