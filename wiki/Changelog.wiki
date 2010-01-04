@@ -7,6 +7,10 @@
 = Current Version =
 World of Warcraft Model Viewer v0.5.08 (Chuanhsing Update)
 
+r675
+
+  - Added interface language chooser by Chuanhsing
+
 r672
 
   - New Exporter Menu by Kjasi
