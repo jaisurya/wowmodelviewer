@@ -11,6 +11,10 @@ The program allows you to view characters and to equip them with items, also all
 
 =How to get the source to compile=
 
+==On Mac OS X==
+
+Building the Mac app? Go [MacOSXCompilation here].
+
 ==Download and install wxWidgets 2.8.10==
 
 1. get wxMSW - installer for Windows(wxMSW-2.8.10-Setup.exe) from http://www.wxwidgets.org/downloads/
