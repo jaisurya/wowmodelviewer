@@ -1,0 +1,40 @@
+#summary Describes how to compile WOWMV on OSX.
+
+= Introduction =
+
+This page describes how to compile WOWMV on your Mac. It is assumed that you have the [http://developer.apple.com/tools/ Apple Development Tools] already installed.
+
+Furthermore, you will need to install some libraries like wxWidgets and Glew, which is easily done via [http://www.finkproject.org/ Fink].
+
+Last but not least, the project will be generated through [http://www.cmake.org/cmake/resources/software.html CMake], a meta build system that allows to create build files independent of the platform.
+
+With these tools ready, let's install the necessary libraries first.
+
+= Before we can start =
+
+First of all, [http://code.google.com/p/wowmodelviewer/source/checkout check out the source code here].
+
+Open up your Terminal application and install wxWidgets, Glew, as well as the PNG and JPEG libraries. You can identify the exact string (in this example for PNG) by typing
+
+{{{
+$ fink apropos png
+}}}
+
+and then installing the library. Currently, you should be good to with
+
+{{{
+$ sudo su
+$ fink install libpng3-shlibs
+$ fink install libjpeg-shlibs
+$ fink install wxmac28-shlibs
+}}}
+
+After you're done, open the CMake application. Set the *Source* code directory to "src" in your checkout directory, and the *Build* directory to "build". Then proceed with *Configure*. If all fields contain a valid directory for libraries and headers, *Configure* again and then click *Generate*.
+
+You should now have an XCode project in your *Build* directory.
+
+= Building the application =
+
+What is left to do is to simply build the *wowmodelviewer* target. After that, your *Build* directory should contain Debug/Release/... with an app inside.
+
+Cheers!
