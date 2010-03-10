@@ -4,7 +4,7 @@
 
 This page describes how to compile WOWMV on your Mac. It is assumed that you have the [http://developer.apple.com/tools/ Apple Development Tools] already installed.
 
-Furthermore, you will need to install some libraries like wxWidgets and Glew, which is easily done via [http://www.finkproject.org/ Fink].
+Furthermore, you will need to install some libraries like wxWidgets and Glew, which is easily done via [http://www.finkproject.org/ Fink]. You might need to enable the [http://www.finkproject.org/faq/usage-fink.php#unstable unstable tree] before installing any packages.
 
 Last but not least, the project will be generated through [http://www.cmake.org/cmake/resources/software.html CMake], a meta build system that allows to create build files independent of the platform.
 
