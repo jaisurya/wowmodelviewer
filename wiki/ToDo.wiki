@@ -2,22 +2,26 @@
 #labels Phase-Requirements,Phase-Support
 < <a href="http://code.google.com/p/wowmodelviewer/wiki/Home">Home</a> ><
 <a href="http://code.google.com/p/wowmodelviewer/wiki/ToDo">To Do</a> ><
-<a href="http://code.google.com/p/wowmodelviewer/wiki/Changelog">Changelog</a> >
+<a href="http://code.google.com/p/wowmodelviewer/wiki/Exporting">Model Exporting</a> ><
+<a target="_blank" href="http://wowmodelviewer.googlecode.com/svn/trunk/doc/buildnotes.txt">Build Notes</a> ><
+<a target="_blank" href="http://wowmodelviewer.googlecode.com/svn/trunk/doc/ChangeLog.txt">Changelog</a> >
 
+[http://i43.tinypic.com/25zh65e.jpg]
 = Introduction =
 
 Obviously the WoW Model Viewer will never be perfect. This page is a list of items we have to add, fix, or remove from the program (other than building upon the core itself) in order to make it better. The list is in order of most desired/useful to least.
 
 = Primary Additions: =
-1. Support for a broader range of video and image formats for importing.<p>
-2. Support for 3D Studio Max and Lightwave 3D exports.<p>
-3. Animation sequences.<p>
-4. Spellcasting effects (Both spell and animation!).<p>
-5. Multiple on-screen characters.<p>
-6. Alpha channels for exports.<p>
+ # Macintosh support including OpenGL.
+ # Support for a broader range of video and image formats for exporting.
+ # Add support for Collada Exporting.
+ # Finish support for Lightwave 3D, 3D Studio Max, Waveform OBJ, and Milkshape 3D Character/Model exports.
+ # Finish/Add support for Lightwave 3D, 3D Studio Max, Waveform OBJ, and Milkshape 3D WMO exports.
+ # Add Exporting of Animation sequences.
 
 = Secondary Additions: =
-1. Integrated Map Viewer.<p>
-2. Macintosh support including OpenGL.<p>
-3. Custom camera tracking.<p>
-4. MPQ importing. <p>
+ # Multiple on-screen characters.
+ # Integrated Map/ADT Viewer.
+ # Custom camera tracking.
+ # Add Animation scripting function.
+ # Spellcasting effects (Both spell and animation!).
