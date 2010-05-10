@@ -19,6 +19,10 @@ The program allows you to view characters and to equip them with items, also all
 
 Building the Mac app? Go [MacOSXCompilation here].
 
+==On Linux==
+
+Building the Linux app? Go [LinuxCompilation here].
+
 ==On Windows==
 Some of the work is already done for users of Visual Studio 2008. Check [Home#Uncommon_Events Uncommon Events] if you are using Visual Studio 2005/2010 or another compiler.
 
