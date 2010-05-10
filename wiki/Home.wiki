@@ -13,58 +13,20 @@ The program allows you to view characters and to equip them with items, also all
 
 -[http://www.wowmodelviewer.org/]
 
+= Currently Supported Versions of World of Warcraft =
+ # Wrath of the Lich King 3.3.x
+ # Cataclysm Alpha (Support is Work In Progress)
+== Supported, but not recommended ==
+ # Wrath of the Lich King 3.1.x
+ # Wrath of the Lich King 3.2.x
+
 =How to get the source to compile=
 
-==On Mac OS X==
+==On Windows==
+Building the Windows app? Go [WindowsCompilation here].
 
+==On Mac OS X==
 Building the Mac app? Go [MacOSXCompilation here].
 
 ==On Linux==
-
 Building the Linux app? Go [LinuxCompilation here].
-
-==On Windows==
-Some of the work is already done for users of Visual Studio 2008. Check [Home#Uncommon_Events Uncommon Events] if you are using Visual Studio 2005/2010 or another compiler.
-
-=== Common Events ===
-Everyone needs to do the following:
-====Download and install wxWidgets 2.8.10====
- # Get wxMSW - installer for Windows(wxMSW-2.8.10-Setup.exe) from [http://www.wxwidgets.org/downloads/ the wxWidgets Website].
- # Install wxMSW-2.8.10-Setup.exe to C:\wxWidgets-2.8.10\
- # Use Visual Studio 2008 to open wxWidgets-2.8.10\build\msw\wx.dsw and build a Debug & Release version.
-====64-Bit====
-If you are building a 64-bit version of WoW Model Viewer, you also need to do the following:
- # Add a 64-bit Configuration. (May not be needed if you get wxWidgets 2.9.0, but that version has not yet been tested.)
- # Build 64-bit Release & Debug versions.
-
-====WoWModelViewer====
-If you need a Subversion program, I recommend [http://tortoisesvn.net/ TortoiseSVN] for Windows users, or you can try one of the ones [http://subversion.apache.org/packages.html listed here].
- # Get wowmodelviewer from [http://code.google.com/p/wowmodelviewer/source/checkout here]. Please refer to your Subversion software's documentation on how to checkout (download) the source code listed on the checkout page.
- # Use Visual Studio 2008 to open wowmodelviewer-read-only\src\wowmodelview.sln
-
-Congratulations! You should have successfully loaded WMV's source code!
-
-=== Uncommon Events ===
-If you are building on Visual Studio 2005 or 2010, or you are not using Visual Studio, you will also need to do the following:
-====Build CxImage Libraries====
- # Get cximage600_full.7z from http://www.xdp.it/cximage.htm
- # Extract the files to C:\cximage600_full and use Visual Studio to open CxImgLib.dsw. Build a release and a debug version.
- # copy bin\cximagecrt.dll & bin\cximagecrtd.dll to wowmodelviewer-read-only\bin_support\Windows\32bit.
- # copy CxImage\CxImageDLL\Debug\cximagecrtd.lib & CxImage\CxImageDLL\Release\cximagecrt.lib to wowmodelviewer-read-only\src\lib\Windows\32bit.
-====64-Bit====
- # Add a configuration for 64-bits to all the projects within the CxImgLib solution. (This will take some time.) I recommend sending the binary information to a new directory, specifically for 64bits. (bin64, Release64 & Debug64 for example.)
- # Compile 64-bit Release & Debug versions.
- # copy bin64\cximagecrt.dll & bin64\cximagecrtd.dll to wowmodelviewer-read-only\bin_support\Windows\64bit.
- # copy CxImage\CxImageDLL\Debug64\cximagecrtd.lib & CxImage\CxImageDLL\Release64\cximagecrt.lib to wowmodelviewer-read-only\src\lib\Windows\64bit.
-
-====Build Glew Libraries====
- # Download the Glew Source from [http://glew.sourceforge.net/ here]. Unzip the files to C:\Glew-1.5.3
- # Open C:\glew-1.5.3\build\vc6\glew.dsw
- # Compile Release and Debug versions.
- # Copy bin\glew32.dll & bin\glew32d.dll to wowmodelviewer-read-only\bin_support\Windows\32bit.
- # Copy lib\glew32.lib, glew32d.lib & glew32s.lib to wowmodelviewer-read-only\src\lib\Windows\32bit
-====64-Bit====
- # Add a configuration for 64-bits to at least the Glew and Glew_Shared projects.
- # Compile 64-bit Release & Debug versions.
- # Copy bin64\glew32.dll & bin64\glew32d.dll to wowmodelviewer-read-only\bin_support\Windows\64bit.
- # Copy lib64\glew32.lib, glew32d.lib & glew32s.lib to wowmodelviewer-read-only\src\lib\Windows\64bit.

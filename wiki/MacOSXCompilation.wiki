@@ -1,4 +1,4 @@
-#summary Describes how to compile WOWMV on OSX.
+#summary Describes how to compile WoW Model Viewer on OSX.
 
 < <a href="http://code.google.com/p/wowmodelviewer/wiki/Home">Home</a> ><
 <a href="http://code.google.com/p/wowmodelviewer/wiki/ToDo">To Do</a> ><

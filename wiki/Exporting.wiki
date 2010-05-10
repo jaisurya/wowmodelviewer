@@ -29,6 +29,8 @@ Currently, WMV can export models to the following formats:
 ===Lightwave 3D===
  * Export WMOs with Lights and Objects/Nulls in the proper locations
  * Export of Items Worn by Players (Weapons, helmets, Etc.)
+ * Export Cameras
+ * Export Camera Animation
 ===Milkshape 3D===
  * Bones Export
  * Export of Items Worn by Players
@@ -38,7 +40,7 @@ Currently, WMV can export models to the following formats:
 M2 Exporters can't do the following:
  * Export Bones (Exeption: Milkshape 3D)
  * Export Animation
- * EXport Cameras & Camera Data
+ * EXport Cameras & Camera Animation (Exception: Lightwave 3D)
  * Export of Items Worn by Players Perfectly
 
 ==WMO Exporter Limitations==
