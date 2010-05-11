@@ -10,20 +10,22 @@
 = Introduction =
 
 {{{
-apt-get install cmake
-apt-get install g++
-apt-get install make
-apt-get install libwxbase2.8-dev
-apt-get install libjpeg62-dev
-apt-get install libpng12-dev
-apt-get install libglew1.5-dev
-apt-get install libbz2-dev
+# apt-get install cmake
+# apt-get install g++
+# apt-get install make
+# apt-get install libwxbase2.8-dev
+# apt-get install libwxgtk2.8-dev
+# apt-get install libjpeg62-dev
+# apt-get install libpng12-dev
+# apt-get install libglew1.5-dev
+# apt-get install libbz2-dev
 
-svn checkout http://wowmodelviewer.googlecode.com/svn/trunk/ wowmodelviewer-read-only
-cd wowmodelviewer-read-only
-cmake .
+# svn checkout http://wowmodelviewer.googlecode.com/svn/trunk/ wmv
+# cd wmv
+# cmake .
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/xp/wmv/src
-
+# make
+/home/xp/wmv/src/modelviewer.h:100:4: error: #error _T("You have not specified a valid Operating System to your release configuration.")
 }}}
