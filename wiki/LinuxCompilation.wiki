@@ -20,8 +20,8 @@
 # apt-get install libglew1.5-dev
 # apt-get install libbz2-dev
 
-$ svn checkout http://wowmodelviewer.googlecode.com/svn/trunk/ wmv
-$ cd wmv
+$ svn checkout http://wowmodelviewer.googlecode.com/svn/trunk/ wowmodelviewer
+$ cd wowmodelviewer
 $ cmake .
 -- The C compiler identification is GNU
 -- The CXX compiler identification is GNU
@@ -58,8 +58,8 @@ If you encounter any BOM problem like:
 
 {{{
 wowmodelviewer/src/app.cpp:1: error: stray '\357' in program
-xp/wowmodelviewer/src/app.cpp:1: error: stray '\273' in program
-xp/wowmodelviewer/src/app.cpp:1: error: stray '\277' in program
+wowmodelviewer/src/app.cpp:1: error: stray '\273' in program
+wowmodelviewer/src/app.cpp:1: error: stray '\277' in program
 }}}
 
 Try do strip UTF8 BOM from all files.
