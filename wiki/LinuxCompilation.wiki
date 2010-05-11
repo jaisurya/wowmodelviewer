@@ -23,9 +23,72 @@
 # svn checkout http://wowmodelviewer.googlecode.com/svn/trunk/ wmv
 # cd wmv
 # cmake .
+-- The C compiler identification is GNU
+-- The CXX compiler identification is GNU
+-- Check for working C compiler: /usr/bin/gcc
+-- Check for working C compiler: /usr/bin/gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Found wxWidgets: TRUE
+-- Found BZip2: /usr/lib/libbz2.so
+-- Looking for BZ2_bzCompressInit in /usr/lib/libbz2.so
+-- Looking for BZ2_bzCompressInit in /usr/lib/libbz2.so - found
+-- Found ZLIB: /usr/lib/libz.so
+-- Found JPEG: /usr/lib/libjpeg.so
+-- Found PNG: /usr/lib/libpng.so
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/xp/wmv/src
+-- Build files have been written to: /home/xp/wowmodelviewer/src
 # make
-/home/xp/wmv/src/modelviewer.h:100:4: error: #error _T("You have not specified a valid Operating System to your release configuration.")
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/xp/wowmodelviewer/src
+[ 43%] Built target cximage
+[ 52%] Built target mpq
+
+Linking CXX executable wowmodelviewer
+[100%] Built target wowmodelviewer
+}}}
+
+If you encounter any BOM problem like:
+
+{{{
+wowmodelviewer/src/app.cpp:1: error: stray '\357' in program
+xp/wowmodelviewer/src/app.cpp:1: error: stray '\273' in program
+xp/wowmodelviewer/src/app.cpp:1: error: stray '\277' in program
+}}}
+
+Try do strip UTF8 BOM from all files.
+
+{{{
+<?php
+function removeBOM($str = '')
+{
+   if (substr($str, 0,3) == pack("CCC",0xef,0xbb,0xbf)) {
+       $str = substr($str, 3);
+   }
+   return $str;
+}
+$dir = "./";
+
+// Open a known directory, and proceed to read its contents
+if (is_dir($dir)) {
+    if ($dh = opendir($dir)) {
+        while (($file = readdir($dh)) !== false) {
+            if ($file == "." || $file == "..")
+                continue;
+            if (filetype($dir.$file) == "file") {
+                $c = file_get_contents($dir.$file);
+                file_put_contents($dir.$file, removeBOM($c));
+            }
+            echo "filename: $file : filetype: " . filetype($dir . $file) . "\n";
+        }
+        closedir($dh);
+    }
+}
+?>
 }}}
