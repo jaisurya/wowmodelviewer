@@ -11,6 +11,7 @@
 
 {{{
 # apt-get install cmake
+# apt-get install gcc
 # apt-get install g++
 # apt-get install make
 # apt-get install libwxbase2.8-dev
@@ -19,6 +20,7 @@
 # apt-get install libpng12-dev
 # apt-get install libglew1.5-dev
 # apt-get install libbz2-dev
+# apt-get install subversion
 
 $ svn checkout http://wowmodelviewer.googlecode.com/svn/trunk/ wowmodelviewer
 $ cd wowmodelviewer
