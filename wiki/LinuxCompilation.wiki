@@ -20,9 +20,9 @@
 # apt-get install libglew1.5-dev
 # apt-get install libbz2-dev
 
-# svn checkout http://wowmodelviewer.googlecode.com/svn/trunk/ wmv
-# cd wmv
-# cmake .
+$ svn checkout http://wowmodelviewer.googlecode.com/svn/trunk/ wmv
+$ cd wmv
+$ cmake .
 -- The C compiler identification is GNU
 -- The CXX compiler identification is GNU
 -- Check for working C compiler: /usr/bin/gcc
@@ -43,7 +43,7 @@
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/xp/wowmodelviewer/src
-# make
+$ make
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/xp/wowmodelviewer/src
