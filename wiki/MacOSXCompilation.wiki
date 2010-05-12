@@ -50,6 +50,13 @@ You should now be able to install the missing libraries.
 
 After you're done, open the CMake application. Set the *Source* code directory to "src" in your checkout directory, and the *Build* directory to "build". Then proceed with *Configure*. If all fields contain a valid directory for libraries and headers, *Configure* again and then click *Generate*.
 
+CMake for command line:
+
+{{{
+$ cd wowmodelviewer_check_out_dir
+$ cmake .
+}}}
+
 You should now have an XCode project in your *Build* directory.
 
 = Building the application =
