@@ -23,7 +23,7 @@
 # apt-get install subversion
 
 $ svn checkout http://wowmodelviewer.googlecode.com/svn/trunk/ wowmodelviewer
-$ cd wowmodelviewer
+$ cd wowmodelviewer/src
 $ cmake .
 -- The C compiler identification is GNU
 -- The CXX compiler identification is GNU
