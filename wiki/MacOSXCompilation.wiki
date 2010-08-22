@@ -57,7 +57,7 @@ $ sudo su
 $ fink install libpng3-shlibs
 $ fink install libjpeg-shlibs
 $ fink install wxmac28-shlibs
-$ fink install glew-shlibs
+$ fink install glew-shlibs glew
 }}}
 
 If fink can't find one or more of the libraries listed above, you'll need to update fink. Running the following commands should help:
@@ -76,7 +76,7 @@ After you're done, open the CMake application. Set the *Source* code directory t
 CMake for command line:
 
 {{{
-$ cd wowmodelviewer_check_out_dir
+$ cd wowmodelviewer_check_out_dir/src
 $ cmake .
 }}}
 
