@@ -11,11 +11,13 @@
 
 This page describes how to compile WOWMV on your Mac. It is assumed that you have the [http://developer.apple.com/tools/ Apple Development Tools] already installed.
 
-Furthermore, you will need to install some libraries like wxWidgets and Glew, which is easily done via [http://www.finkproject.org/ Fink]. You might need to enable the [http://www.finkproject.org/faq/usage-fink.php#unstable unstable tree] before installing any packages. If you have OS X 10.6.x then you have to download the file by the name fink-0.29.10.tar.gz. Expand it, and open the folder and find the file by the name bootstrap. Open bootstrap and the application by the name Terminal will open for you. If you have OS X 10.5.x, you can actually download an installer by the name Fink 0.9.0 Binary Installer (PowerPC) or Fink 0.9.0 Binary Installer (Intel) – so those users get an easier method than OS X 10.6.x users really.
+Furthermore, you will need to install some libraries like wxWidgets and Glew, which is easily done via [http://www.finkproject.org/ Fink]. You might need to enable the [http://www.finkproject.org/faq/usage-fink.php#unstable unstable tree] before installing any packages. 
 
-Type the command fink selfupdate. Chose the default answer for the question it will ask. If Fink is not responding to your commands by the way then type the command . /sw/bin/init.sh and Terminal will know that you are using Fink commands.
+If you have OS X 10.6.x then you have to download the file by the name *fink-0.29.10.tar.gz*. Expand it, and open the folder and find the file by the name *bootstrap*. Open *bootstrap* and the application by the name Terminal will open for you. If you have OS X 10.5.x, you can actually download an installer by the name *Fink 0.9.0 Binary Installer (PowerPC)* or *Fink 0.9.0 Binary Installer (Intel)* – so those users get an easier method than OS X 10.6.x users really.
 
-Now you have an updated Fink. You still have to tell Fink to enable the "unstable" tree which is off by default, or else the application will not work in the end. Type the command fink configure. Hit return for the default questions until you get to a particular question.
+Type the command fink *selfupdate*. Chose the default answer for the question it will ask. If Fink is not responding to your commands by the way then type the command . */sw/bin/init.sh* and Terminal will know that you are using Fink commands.
+
+Now you have an updated Fink. You still have to tell Fink to enable the "unstable" tree which is off by default, or else the application will not work in the end. Type the command *fink configure*. Hit return for the default questions until you get to a particular question.
 
 The "unstable" tree contains many packages not present in the "stable" tree and
 often has newer versions of those that are present. All package updates are
@@ -29,9 +31,9 @@ want to activate it? [y/N]
 
 This time type Y for Yes before hitting the Return button instead of just hitting the Return button which has a default N for No. It will ask a few more questions which you just use the default answer by hitting the Return button.
 
-Now you have the "unstable" tree turned on in Fink. Time to update Fink again. Type the command fink selfupdate-rsync. Eventually it will say that it has some new packages to install so just hit the Return button for Yes. Sit back for awhile as it downloads the newer update.
+Now you have the "unstable" tree turned on in Fink. Time to update Fink again. Type the command fink *selfupdate-rsync*. Eventually it will say that it has some new packages to install so just hit the Return button for Yes. Sit back for awhile as it downloads the newer update.
 
-After that is done type the command fink update-all. Eventually it will say that it has some new packages to install so just hit the Return button for Yes. Sit back for awhile as it downloads the newest update.
+After that is done type the command fink *update-all*. Eventually it will say that it has some new packages to install so just hit the Return button for Yes. Sit back for awhile as it downloads the newest update.
 
 Last but not least, the project will be generated through [http://www.cmake.org/cmake/resources/software.html CMake], a meta build system that allows to create build files independent of the platform.
 
