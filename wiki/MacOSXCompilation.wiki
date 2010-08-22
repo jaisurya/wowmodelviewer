@@ -26,14 +26,15 @@ versions and bug-fixes sooner. However, that means packages in "unstable" can
 change rapidly and are occasionally broken temporarily. In addition, packages
 from the "unstable" tree are less likely to be available from bindist servers
 immediately (if at all).
+
 The "unstable" tree does not appear to be activated in your fink now. Do you
 want to activate it? [y/N]
 
 This time type Y for Yes before hitting the Return button instead of just hitting the Return button which has a default N for No. It will ask a few more questions which you just use the default answer by hitting the Return button.
 
-Now you have the "unstable" tree turned on in Fink. Time to update Fink again. Type the command fink *selfupdate-rsync*. Eventually it will say that it has some new packages to install so just hit the Return button for Yes. Sit back for awhile as it downloads the newer update.
+Now you have the "unstable" tree turned on in Fink. Time to update Fink again. Type the command *fink selfupdate-rsync*. Eventually it will say that it has some new packages to install so just hit the Return button for Yes. Sit back for awhile as it downloads the newer update.
 
-After that is done type the command fink *update-all*. Eventually it will say that it has some new packages to install so just hit the Return button for Yes. Sit back for awhile as it downloads the newest update.
+After that is done type the command *fink update-all*. Eventually it will say that it has some new packages to install so just hit the Return button for Yes. Sit back for awhile as it downloads the newest update.
 
 Last but not least, the project will be generated through [http://www.cmake.org/cmake/resources/software.html CMake], a meta build system that allows to create build files independent of the platform.
 
