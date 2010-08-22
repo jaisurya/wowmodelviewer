@@ -15,7 +15,7 @@ Furthermore, you will need to install some libraries like wxWidgets and Glew, wh
 
 If you have OS X 10.6.x then you have to download the file by the name *fink-0.29.10.tar.gz*. Expand it, and open the folder and find the file by the name *bootstrap*. Open *bootstrap* and the application by the name Terminal will open for you. If you have OS X 10.5.x, you can actually download an installer by the name *Fink 0.9.0 Binary Installer (PowerPC)* or *Fink 0.9.0 Binary Installer (Intel)* – so those users get an easier method than OS X 10.6.x users really.
 
-Type the command fink *selfupdate*. Chose the default answer for the question it will ask. If Fink is not responding to your commands by the way then type the command . */sw/bin/init.sh* and Terminal will know that you are using Fink commands.
+Type the command *fink selfupdate*. Chose the default answer for the question it will ask. If Fink is not responding to your commands by the way then type the command . */sw/bin/init.sh* and Terminal will know that you are using Fink commands.
 
 Now you have an updated Fink. You still have to tell Fink to enable the "unstable" tree which is off by default, or else the application will not work in the end. Type the command *fink configure*. Hit return for the default questions until you get to a particular question.
 
