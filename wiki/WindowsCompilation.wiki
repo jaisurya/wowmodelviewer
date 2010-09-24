@@ -12,10 +12,10 @@ Some of the work is already done for users of Visual Studio 2008. Check [Windows
 
 = Common Events =
 Everyone needs to do the following:
-==Download and install wxWidgets 2.8.10==
- # Get wxMSW - installer for Windows(wxMSW-2.8.10-Setup.exe) from [http://www.wxwidgets.org/downloads/ the wxWidgets Website].
- # Install wxMSW-2.8.10-Setup.exe to C:\wxWidgets-2.8.10\
- # Use Visual Studio 2008 to open wxWidgets-2.8.10\build\msw\wx.dsw and build a Debug & Release version.
+==Download and install wxWidgets 2.8.11==
+ # Get wxMSW - installer for Windows(wxMSW-2.8.11-Setup.exe) from [http://www.wxwidgets.org/downloads/ the wxWidgets Website].
+ # Install wxMSW-2.8.11-Setup.exe to C:\wxWidgets-2.8.11\
+ # Use Visual Studio 2008 to open wxWidgets-2.8.11\build\msw\wx.dsw and build a Debug & Release version.
 ==64-Bit==
 If you are building a 64-bit version of WoW Model Viewer, you also need to do the following:
  # Add a 64-bit Configuration. (May not be needed if you get wxWidgets 2.9.0, but that version has not yet been tested.)
