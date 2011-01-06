@@ -21,6 +21,8 @@
 # apt-get install libglew1.5-dev
 # apt-get install libbz2-dev
 # apt-get install subversion
+or in one line
+$ sudo apt-get install cmake gcc g++ make libwxbase2.8-dev libwxgtk2.8-dev libjpeg62-dev libpng12-dev libglew1.5-dev libbz2-dev subversion
 
 $ svn checkout http://wowmodelviewer.googlecode.com/svn/trunk/ wowmodelviewer
 $ cd wowmodelviewer/src
@@ -54,43 +56,4 @@ $ make
 
 Linking CXX executable wowmodelviewer
 [100%] Built target wowmodelviewer
-}}}
-
-If you encounter any BOM problem like:
-
-{{{
-wowmodelviewer/src/app.cpp:1: error: stray '\357' in program
-wowmodelviewer/src/app.cpp:1: error: stray '\273' in program
-wowmodelviewer/src/app.cpp:1: error: stray '\277' in program
-}}}
-
-Try do strip UTF8 BOM from all files.
-
-{{{
-<?php
-function removeBOM($str = '')
-{
-   if (substr($str, 0,3) == pack("CCC",0xef,0xbb,0xbf)) {
-       $str = substr($str, 3);
-   }
-   return $str;
-}
-$dir = "./";
-
-// Open a known directory, and proceed to read its contents
-if (is_dir($dir)) {
-    if ($dh = opendir($dir)) {
-        while (($file = readdir($dh)) !== false) {
-            if ($file == "." || $file == "..")
-                continue;
-            if (filetype($dir.$file) == "file") {
-                $c = file_get_contents($dir.$file);
-                file_put_contents($dir.$file, removeBOM($c));
-            }
-            echo "filename: $file : filetype: " . filetype($dir . $file) . "\n";
-        }
-        closedir($dh);
-    }
-}
-?>
 }}}
