@@ -8,7 +8,7 @@
 
 [http://i43.tinypic.com/25zh65e.jpg]
 = Introduction =
-Some of the work is already done for users of Visual Studio 2008. Check [WindowsCompilation#Uncommon_Events Uncommon Events] if you are using Visual Studio 2005/2010 or another compiler.
+Some of the work is already done for users of Visual Studio 2008 & 2010. Check [WindowsCompilation#Uncommon_Events Uncommon Events] if you are using Visual Studio 2005 or another compiler.
 
 = Common Events =
 Everyone needs to do the following:
@@ -24,40 +24,31 @@ If you are building a 64-bit version of WoW Model Viewer, you also need to do th
 =WoWModelViewer=
 If you need a Subversion program, I recommend [http://tortoisesvn.net/ TortoiseSVN] for Windows users, or you can try one of the ones [http://subversion.apache.org/packages.html listed here].
  # Get wowmodelviewer from [http://code.google.com/p/wowmodelviewer/source/checkout here]. Please refer to your Subversion software's documentation on how to checkout (download) the source code listed on the checkout page.
- # Use Visual Studio 2008 to open wowmodelviewer-read-only\src\wowmodelview.sln
+ # Use Visual Studio 2008 to open wowmodelviewer-read-only\src\wowmodelview_VC90.sln or Visual Studio 2010 to open wowmodelviewer-read-only\src\wowmodelview_VC100.sln
+ # If you are not using one of the provided Visual Studio sln files, you will need to open wowmodelviewer-read-only\src\stormlib and compile that first.
+ # Build the WMV project.
 
-Congratulations! You should have successfully loaded WMV's source code!
+Congratulations! You should have successfully compiled WMV's source code!
 
 = Uncommon Events =
-If you are building on Visual Studio 2005 or 2010, or you are not using Visual Studio, you will also need to do the following:
+If you are building on Visual Studio 2005, or you are not using Visual Studio, you will also need to do the following:
+==Build Glew Libraries==
+ # Navigate to wowmodelviewer-read-only\src\glew\build\vc6
+ # Convert glew.dsw to your project type.
+ # Compile Release and Debug versions.
+==64-Bit==
+ # Navigate to wowmodelviewer-read-only\src\glew\build\vc6
+ # Convert glew.dsw to your project type.
+ # Build 64-bit compilations, if nessicary.
+ # Compile 64-bit Release & Debug versions.
+
 ==Build CxImage Libraries==
  # Get cximage600_full.7z from http://www.xdp.it/cximage.htm
- # Extract the files to C:\cximage600_full and use Visual Studio to open CxImgLib.dsw. Build a release and a debug version.
- # copy bin\cximagecrt.dll & bin\cximagecrtd.dll to wowmodelviewer-read-only\bin_support\Windows\32bit.
- # copy CxImage\CxImageDLL\Debug\cximagecrtd.lib & CxImage\CxImageDLL\Release\cximagecrt.lib to wowmodelviewer-read-only\src\lib\Windows\32bit.
+ # Extract the files to C:\cximage600_full and open/convert CxImgLib.dsw. Build a release and a debug version of the CXImageCrtdll project.
+ # copy bin\cximagecrt32.dll & bin\cximagecrt32d.dll to wowmodelviewer-read-only\bin_support\(OS)\32bit.
+ # copy CxImage\CxImageDLL\Debug\cximagecrt32d.lib & CxImage\CxImageDLL\Release\cximagecrt32.lib to wowmodelviewer-read-only\src\lib\(OS)\32bit.
 ==64-Bit==
  # Add a configuration for 64-bits to all the projects within the CxImgLib solution. (This will take some time.) I recommend sending the binary information to a new directory, specifically for 64bits. (bin64, Release64 & Debug64 for example.)
  # Compile 64-bit Release & Debug versions.
- # copy bin64\cximagecrt.dll & bin64\cximagecrtd.dll to wowmodelviewer-read-only\bin_support\Windows\64bit.
- # copy CxImage\CxImageDLL\Debug64\cximagecrtd.lib & CxImage\CxImageDLL\Release64\cximagecrt.lib to wowmodelviewer-read-only\src\lib\Windows\64bit.
-
-==Build Glew Libraries==
- # Download the Glew Source from [http://glew.sourceforge.net/ here]. Unzip the files to C:\Glew-1.5.3
- # Open C:\glew-1.5.3\build\vc6\glew.dsw
- # Compile Release and Debug versions.
- # Copy bin\glew32.dll & bin\glew32d.dll to wowmodelviewer-read-only\bin_support\Windows\32bit.
- # Copy lib\glew32.lib, glew32d.lib & glew32s.lib to wowmodelviewer-read-only\src\lib\Windows\32bit
-==64-Bit==
- # Add a configuration for 64-bits to at least the Glew and Glew_Shared projects.
- # Compile 64-bit Release & Debug versions.
- # Copy bin64\glew32.dll & bin64\glew32d.dll to wowmodelviewer-read-only\bin_support\Windows\64bit.
- # Copy lib64\glew32.lib, glew32d.lib & glew32s.lib to wowmodelviewer-read-only\src\lib\Windows\64bit.
-
-==Build StormLib Libraries==
- # Download the StormLib Library source files from [http://www.zezula.net/en/mpq/download.html#StormLib here]. Unzip the files.
- # Open StormLib.sln
- # Compile Dynamic & Static Debug & Release versions.
- # Copy bin\StormLib\Win32\DebugAD\StormLibDAD.lib, bin\StormLib\Win32\DebugAS\StormLibDAS.lib, bin\StormLib\Win32\ReleaseAD\StormLibRAD.lib & bin\StormLib\Win32\ReleaseAS\StormLibRAS.lib to wowmodelviewer-read-only\src\lib\Windows\32bit.
-==64-Bit==
- # Compile Dynamic & Static 64-bit Debug & Release versions.
- # Copy bin\StormLib\Win64\DebugAD\StormLibDAD.lib, bin\StormLib\Win64\DebugAS\StormLibDAS.lib, bin\StormLib\Win64\ReleaseAD\StormLibRAD.lib & bin\StormLib\Win64\ReleaseAS\StormLibRAS.lib to wowmodelviewer-read-only\src\lib\Windows\64bit.
+ # copy bin64\cximagecrt64.dll & bin64\cximagecrt64d.dll to wowmodelviewer-read-only\bin_support\(OS)\64bit.
+ # copy CxImage\CxImageDLL\Debug64\cximagecrt64d.lib & CxImage\CxImageDLL\Release64\cximagecrt64.lib to wowmodelviewer-read-only\src\lib\(OS)\64bit.

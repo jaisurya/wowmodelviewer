@@ -14,11 +14,8 @@ The program allows you to view characters and to equip them with items, also all
 -[http://www.wowmodelviewer.org/]
 
 = Currently Supported Versions of World of Warcraft =
- * Wrath of the Lich King 3.3.x
- * Cataclysm Alpha (Support is Work In Progress)
-== Supported, but not recommended ==
- * Wrath of the Lich King 3.1.x
- * Wrath of the Lich King 3.2.x
+ * Cataclysm 4.x.x
+ * Wrath of the Lich King 3.x.x
 
 =How to get the source to compile=
 

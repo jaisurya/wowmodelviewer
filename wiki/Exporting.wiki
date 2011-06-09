@@ -8,8 +8,11 @@
 
 [http://i43.tinypic.com/25zh65e.jpg]
 
+For a very detailed graph of what WMV can and can't do, please check <a href="http://www.wowmodelviewer.org/forum/index.php?topic=5784.0">this forum topic</a>.
+
 =What WoW Model Viewer Can Do=
 WoW Model Viewer (WMV) can export various types of models to various different formats. Not every exporter works 100% with all the models. That is our eventual goal, but we aren't there yet.
+
 == Model Types ==
 There are three types of models in World of Warcraft. WMV can read 2 of them; Model (.m2) files, and World Model Object (.wmo) files. The third type of model is Terrain (.adt) files.
 
@@ -30,6 +33,7 @@ Currently, WMV can export models to the following formats:
 ===Lightwave 3D===
  * Export WMOs with Lights and Objects/Nulls in the proper locations
  * Export of Items Worn by Players (Weapons, helmets, Etc.)
+ * Bones Export
  * Export Cameras
  * Export Camera Animation
 ===Milkshape 3D===
@@ -39,8 +43,8 @@ Currently, WMV can export models to the following formats:
 =What WoW Model Viewer Can't Do=
 ==M2 Exporter Limitations==
 M2 Exporters can't do the following:
- * Export Bones (Exeption: Milkshape 3D)
- * Export Animation
+ * Export Bones (Exeption: Lightwave 3D, FBX & Milkshape 3D)
+ * Export Animation (Exeption: FBX)
  * EXport Cameras & Camera Animation (Exception: Lightwave 3D)
  * Export of Items Worn by Players Perfectly
 

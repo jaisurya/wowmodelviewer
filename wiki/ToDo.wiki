@@ -12,7 +12,6 @@
 Obviously the WoW Model Viewer will never be perfect. This page is a list of items we have to add, fix, or remove from the program (other than building upon the core itself) in order to make it better. The list is in order of most desired/useful to least.
 
 = Primary Additions: =
- # Macintosh support including OpenGL.
  # Support for a broader range of video and image formats for exporting.
  # Add support for Collada Exporting.
  # Finish support for Lightwave 3D, 3D Studio Max, Waveform OBJ, and Milkshape 3D Character/Model exports.
