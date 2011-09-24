@@ -62,7 +62,7 @@ In order to build a 64-bit WoW Model Viewer, you *MUST* compile a 64-bit Qt fram
 = Building WoWModelViewer =
 If you need a Subversion program, I recommend [http://tortoisesvn.net/ TortoiseSVN] for Windows users, or you can try one of the ones [http://subversion.apache.org/packages.html listed here].
  # Checkout (download) `http://wowmodelviewer.googlecode.com/svn/branches/wmv0800` as outlined [http://code.google.com/p/wowmodelviewer/source/checkout here]. Please refer to your Subversion software's documentation on how to checkout  the source code listed on the checkout page.
- # Navigate to `wowmodelviewer-read-only\Source\StormLib` and open `StormLib_VC100.sln` if you're using Visual Studio 2008, or `StormLib_VC100.sln` if you're using Visual Studio 2010.
+ # Navigate to `wowmodelviewer-read-only\Source\StormLib` and open `StormLib_VC90.sln` if you're using Visual Studio 2008, or `StormLib_VC100.sln` if you're using Visual Studio 2010.
  # Compile Debug and Release configurations for 32-bit. If you're planning to build a 64-bit version of WMV, build the 64-bit configurations too.
  # Open `wowmodelviewer-read-only\Source\WMV_VC90.sln` for Visual Studio 2008, or `wowmodelviewer-read-only\Source\WMV_VC100.sln` for Visual Studio 2010.
  # Build the WMV project.
