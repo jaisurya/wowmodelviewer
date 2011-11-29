@@ -6,5 +6,7 @@ We've switched to a new [http://apoklipse.org:8080/secure/Dashboard.jspa JIRA Bu
 
 ==What about the old issues?==
 We will still work on fixing the old issues, but new issues will be deleted.
+All these issues are viewable on our JIRA bugtracker, just search an issue with the same title as your old one on wowmodelviewer google tracker.
 
-Click [http://code.google.com/p/wowmodelviewer/issues/list here] to view the old issues.
+
+Feel free to ask for support on our [http://www.womodelviewer.org/forum forum].
