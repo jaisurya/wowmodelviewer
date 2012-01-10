@@ -13,7 +13,7 @@ This page describes how to compile WOWMV on your Mac. It is assumed that you hav
 
 Furthermore, you will need to install some libraries like wxWidgets and Glew, which is easily done via [http://www.finkproject.org/ Fink]. You might need to enable the [http://www.finkproject.org/faq/usage-fink.php#unstable unstable tree] before installing any packages. 
 
-If you have OS X 10.6.x then you have to download the file by the name *fink-0.29.10.tar.gz*. Expand it, and open the folder and find the file by the name *bootstrap*. Open *bootstrap* and the application by the name Terminal will open for you. If you have OS X 10.5.x, you can actually download an installer by the name *Fink 0.9.0 Binary Installer (PowerPC)* or *Fink 0.9.0 Binary Installer (Intel)* – so those users get an easier method than OS X 10.6.x users really.
+If you have OS X 10.6.x then you have to download the file by the name *fink-0.31.6.tar.gz*. Expand it, and open the folder and find the file by the name *bootstrap*. Open *bootstrap* and the application by the name Terminal will open for you. If you have OS X 10.5.x, you can actually download an installer by the name *Fink 0.9.0 Binary Installer (PowerPC)* or *Fink 0.9.0 Binary Installer (Intel)* – so those users get an easier method than OS X 10.6.x users really.
 
 Type the command *fink selfupdate*. Chose the default answer for the question it will ask. If Fink is not responding to your commands by the way then type the command . */sw/bin/init.sh* and Terminal will know that you are using Fink commands.
 
