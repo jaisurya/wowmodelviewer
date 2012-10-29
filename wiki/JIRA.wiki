@@ -2,7 +2,7 @@
 #labels Phase-Support
 
 =New Bugtracker=
-We've switched to a new [http://jira.wowmodelviewer.org JIRA Bugtracker]. Please post your bugs and issues there.
+We've switched to a new [https://wowmodelviewer.atlassian.net/browse/WMV JIRA Bugtracker]. Please post your bugs and issues there.
 
 ==What about the old issues?==
 We will still work on fixing the old issues, but new issues will be deleted.
